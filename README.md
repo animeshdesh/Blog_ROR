@@ -2,6 +2,8 @@
 
 Blog ROR is a Ruby on Rails application that allows users to create, read, update, and delete blog posts. It includes user authentication and image upload functionality.
 
+<img width="569" alt="image" src="https://github.com/user-attachments/assets/3300d90d-0cdd-4270-9163-2aa2c8908bed">
+
 ## Features
 
 - User authentication (sign up, log in, log out)
