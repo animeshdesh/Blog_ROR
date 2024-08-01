@@ -1,0 +1,26 @@
+<div id="<%= dom_id blog %>" class="card">
+  <% if blog.image.attached? %>
+    <%= image_tag blog.image, class: "card-img-top" %>
+  <% end %>
+  <div class="card-body">
+    <h5 class="card-title"><%= blog.title %></h5>
+    <p class="card-text">
+      <small class="text-muted">
+        Published at: <%= blog.published_at.strftime("%B %d, %Y at %I:%M %p") if blog.published_at %>
+      </small>
+    </p>
+    <p class="card-text">
+      <% if local_assigns[:truncate] %>
+        <%= truncate(blog.content, length: 150) %>
+      <% else %>
+        <%= blog.content %>
+      <% end %>
+    </p>
+    <p class="card-text">
+<!--      <small class="text-muted">-->
+<!--        Author:   <%#= debug(blog) %>-->
+
+<!--      </small>-->
+    </p>
+  </div>
+</div>

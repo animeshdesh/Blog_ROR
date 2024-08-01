@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+<div class="my-3">
+  <%= link_to "Edit this blog", edit_blog_path(@blog), class: "btn btn-secondary mt-2" if @blog.user == current_user  %>
+  <%= link_to "Back to blogs", blogs_path, class: "btn btn-primary mt-2" %>
+  <%= link_to "Destroy this blog", @blog, method: :delete, class: "btn btn-danger mt-2" %>
+</div>
+
+<%= render @blog %>
